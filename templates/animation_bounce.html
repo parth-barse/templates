@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bounce Animation | Coding India </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="removeBanner.js"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.jpg">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-link {
+            font-family: 'Poppins', sans-serif;
+            padding: 0px 15px !important;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: yellow !important;
+            transform: translateY(-4px);
+        }
+
+        .navbar-brand {
+            margin-left: 25px;
+            font-size: 24px;
+            cursor: pointer;
+            color: cyan !important;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .ci {
+            color: orange;
+            font-size: 18px;
+        }
+
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media only screen and (max-width: 652px) {
+            .ci {
+                display: none;
+            }
+
+            .nav-link {
+                font-family: 'Poppins', sans-serif;
+                padding: 8px !important;
+            }
+
+            .ce-um {
+                margin-top: 10px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand font-weight-bold f-lg-d" href=""> Bounce Animation <span class="ci"> - Coding India
+            </span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav  ml-auto text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link ce-um" href="../index.html">Code Editor<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="">Templates<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../guide.html" target="_blank" style="margin-right: 35px;">Guide<span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!--************************************************************************************************-->
+    <!--************************************************************************************************-->
+
+
+
+    <section style="margin-top: 100px;">
+        <h3 style="text-align: center; margin-bottom: 20px;">Paste in :- Index.html</h3>
+        <button class="btn btn-danger" style="display: block; margin: auto;" onclick="myFunction()">Copy</button>
+
+        <textarea rows="15" cols="50" readonly id="myTest"
+            style="resize: none; background-color: rgb(124, 255, 255); display: block; margin: auto;">
+
+
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+
+<style>
+h1 {
+  animation: mymove 5s infinite;
+text-align: center;
+margin-top: 100px;
+}
+</style>
+            </head>
+
+            <body>
+                <h1 class="animate__animated animate__bounce"> Bounce Animation</h1>
+            </body> 
+
+        </html>
+        
+        
+        
+        </textarea>
+
+        </div>
+    </section>
+
+
+    <p style="text-align: center; font-size: 22px; margin-top: 60px;"> <a href="index.html"> More Templates </a></p>
+
+    <script>
+        function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myTest");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 999999999999999999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            /* Alert the copied text */
+            alert("Copied to Clipboard !");
+        }
+    </script>
+
+
+    <!--************************************************************************************************-->
+    <!--************************************************************************************************-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

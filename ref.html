@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section> 
+
+       <p style="text-align: start; font-size: 22px;">Index.html :- </p>
+        <button class="btn btn-danger" style="display: block; float: right;" onclick="myFunction()">Copy</button>
+        <textarea rows="8" cols="60" readonly id="myTest"
+            style="resize: none; background-color: rgb(124, 255, 255); display: block; margin: auto;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque minima dolorum nesciunt qui velit ex quia inventore, distinctio nulla alias. Error aliquam eos voluptas magnam esse quam neque inventore aspernatur, distinctio facilis fugit reprehenderit mollitia repudiandae maxime ipsa similique repellendus voluptate officia! Eos sit nostrum beatae ducimus accusamus sed nisi maxime temporibus, nobis molestiae voluptatibus tempore quam natus perspiciatis laborum, soluta eligendi atque nulla repellat. Quas deserunt facilis molestias modi, omnis recusandae cum neque eius dolore non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, neque minima dolorum nesciunt qui velit ex quia inventore, distinctio nulla alias. Error aliquam eos voluptas magnam esse quam neque inventore aspernatur, distinctio facilis fugit reprehenderit mollitia repudiandae maxime ipsa similique repellendus voluptate officia! Eos sit nostrum beatae ducimus accusamus sed nisi maxime temporibus, nobis molestiae voluptatibus tempore quam natus perspiciatis laborum, soluta eligendi atque nulla repellat. Quas deserunt facilis molestias modi, omnis recusandae cum neque eius dolore non!
+        
+        </textarea>
+    </div>
+</section>
+
+    <script>
+        function myFunction() {
+            /* Get the text field */
+            var copyText = document.getElementById("myTest");
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 999999999999999999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            /* Alert the copied text */
+            alert("Copied to Clipboard !");
+        }
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
